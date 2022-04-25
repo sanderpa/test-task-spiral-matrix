@@ -35,7 +35,7 @@ func recursiveFill (m: inout [Array<Int>], currentV: Int = 1, x: Int = 0, y: Int
 }
 
 // Edit here the dimension of the matrix
-var m1 = generateMatrix(x: 10000, y: 10000)
+var m1 = generateMatrix(x: 10, y: 10)
 let result1 = recursiveFill(m: &m1)
 
 // This loop is used to print a matrix to a column
