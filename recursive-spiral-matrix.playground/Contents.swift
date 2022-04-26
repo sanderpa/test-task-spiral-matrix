@@ -25,7 +25,7 @@ func recursiveFill (m: inout [Array<Int>], currentV: Int = 1, x: Int = 0, y: Int
     
     m[x][y] = currentV
         
-    let nextV = currentV >= m.count ? 1 : currentV + 1
+    let nextV = currentV + 1
     let isNextEmpty = isEmpty(m: m, x: x+dx, y: y+dy)
     let (nextDx, nextDy) = isNextEmpty ? (dx, dy) : switchDirection(dx: dx, dy: dy)
     let (nextX, nextY) = (x + nextDx, y + nextDy)
